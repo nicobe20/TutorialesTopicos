@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Inicial</title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #CADEEE;
+        }
+        #index {
+            margin-top: 100px;
+            background-color: #f3a847;
+        }
+        .btn-beer {
+        background-color: #f3a847; 
+        border-color: #f3a847; 
+        color: #fff; 
+        }
+        .btn-beer:hover {
+        background-color: #e39033; 
+        border-color: #e39033; 
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="index" class="container">
+        <div class="text-center">
+            <h1 class="display-3">Bienvenido a Threeman</h1>
+            <p class="lead">¡La mejor tienda de cerveza!</p>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h2 class="card-title">Crear Cliente</h2>
+                        <p class="card-text">Haz clic aquí para crear un nuevo cliente.</p>
+                        <a href="{% url 'crearCliente' %}" class="btn-beer">Crear Cliente</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h2 class="card-title">Listar Clientes</h2>
+                        <p class="card-text">Haz clic aquí para ver la lista de clientes.</p>
+                        <a href="{% url 'listarClientes' %}" class="btn-beer">Listar Clientes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
