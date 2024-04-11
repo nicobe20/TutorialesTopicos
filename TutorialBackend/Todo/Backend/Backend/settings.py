@@ -141,6 +141,3 @@ REST_FRAMEWORK = {
 ] 
 }
 
-"""
-lets say 2 space marines in the background walking peacefully some lets say 20 meters away from the viewer in a grassy field like a wheat field they are somwhat injured like they have just survived a battle but the scenery is calm with some ruins like old italian ruins, and the sky is blue with some clouds, the style of the drawing is 
-"""
